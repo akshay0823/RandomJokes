@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Indie+Flower&family=Satisfy&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #35345a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.Jokes_heading {
+  margin: 15px 0;
+  font-family: 'Fasthand', cursive;
+  letter-spacing: 2px;
+  animation: jokeHeading 1s infinite ease-in-out;
+  font-weight: bolder;
+}
+@keyframes jokeHeading {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#joke {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 0 20px;
+  font-family: 'Satisfy', cursive;
+}
+#jokeBtn {
+  width: 120px;
+  height: 30px;
+  border: none;
+  background-color: #cfb013;
+  color: white;
+  font-family: cursive;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+#jokeBtn:hover {
+    transform: scale(1.1);
+}
